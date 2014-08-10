@@ -1,0 +1,21 @@
+0 - Get all information of 'Sajia'
+1 - Get final result of sajia
+2 - Get all results of Sajia
+3 - Get the average of all results of sajia
+
+
+
+
+
+[0] SELECT * FROM students WHERE students_id =1 ;
+
+[1] SELECT students_name, final_results_gpa FROM students INNER JOIN final_results ON students.students_id=final_results.students_id WHERE students.students_id= 1;
+
+[2] SELECT students_name, results_education_level, results_gpa FROM students INNER JOIN results ON students.students_id=results.students_id WHERE students.students_id= 1; 
+
+[3] SELECT students_name,  AVG(results_gpa) 
+FROM students 
+INNER JOIN results 
+ON students.students_id=results.students_id 
+WHERE students.students_id= 1; 
+
