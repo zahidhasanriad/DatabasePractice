@@ -1,0 +1,5 @@
+SELECT students_name, courses_title, courses_code FROM students INNER JOIN `student's_courses` ON students.students_id = `student's_courses`.students_id INNER JOIN courses ON `student's_courses`.courses_id = courses.courses_id WHERE students.students_id= 2 ;
+
+SELECT students_name, courses_title, courses_code 
+FROM students,courses,`student's_courses` 
+WHERE students.students_id = `student's_courses`.students_id and `student's_courses`.courses_id = courses.courses_id  and students.students_id= 2 ;
